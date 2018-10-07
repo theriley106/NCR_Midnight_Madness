@@ -20,11 +20,11 @@ while len(all_vals) > 0:
 				all_vals.pop(0)
 			else:
 				break
-		info['orderId'] = all_vals.pop(0)
+		info['orderId'] = int(all_vals.pop(0))
 		info['timeSubmitted'] = all_vals.pop(0)
 		info['pickUpTime'] = all_vals.pop(0)
-		info['numberOfBurgers'] = all_vals.pop(0)
-		info['preparationLength'] = all_vals.pop(0)
+		info['numberOfBurgers'] = int(all_vals.pop(0))
+		info['preparationLength'] = int(all_vals.pop(0))
 	except:
 		pass
 
